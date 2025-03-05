@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+        h2 {
+            font-family: 'Lucida';
+            color: #220c59;
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 45px;
+        }
+        .myimg{
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 25px;
+        }
+
+        p {
+            font-family: poppins;
+            color: #283a69;
+            margin-bottom: 20px;
+        }
+        .help-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        h1 {
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f4ad07;
+            font-family: cursive;
+        }
+       
+    </style>
+</head>
+<body>
+   <!-- navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <div class = "logo">
+          <img class = "myimg" src="{{url_for('static',filename='logo.jpg')}}" alt="">
+      </div>
+
+    <a class="navbar-brand" href="#">AI Health Care </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"  href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/help">Help</a>
+        </li>
+      
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+        <h1>Help Center</h1>
+
+        <h2>Common Problems</h2>
+        <ul style="font-family: cursive;color: #4a0908;margin-bottom: 10px;font-size: 20px;">
+            <li>If you've entered the correct symptom but still don't see any results, check for spelling errors. You can also copy the symptom directly from the list.</li>
+            <li>If you encounter an error, ensure you've entered the correct symptom. Refer to the list of symptoms for assistance.</li>
+            <li>If the error persists, try reloading the page.</li>
+            <li>When entering symptoms, ensure they are comma-separated without any spaces.</li>
+        </ul>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+        
+</body>
+</html>

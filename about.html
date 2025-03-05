@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AI Healthcare</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+           /* background-image: url('static/background.jpeg');  Replace 'path/to/your/image.jpg' with the path to your image file */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: repeat; /* Do not repeat the background image */
+            background: linear-gradient(to bottom,rgb(254, 251, 247), white ); /* Gradient from #4e73df to #224abe */
+            color: white; /* Text color */
+        }
+
+        h2 {
+            font-family: 'Lucida';
+            color: #dc8a25;
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 25px;
+        }
+        h1 {
+            font-family: 'poppins';
+            color: rgba(3, 7, 28, 0.669);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            padding-top: 10px;
+            font-size: 60px;
+        }
+
+        p {
+            font-family: poppins;
+            color: #283a69;
+            margin-bottom: 20px;
+        }
+
+        .feature {
+            padding-top: 5px;
+            padding-left: 30px;
+            font-family:'cursive';
+            font-size: 20px;
+        }
+
+        .ai-healthcare-img {
+            max-width: 1000%;
+            height: 400px;
+            width: 1250px;
+
+        }
+        .myimg{
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 25px;
+    }
+    </style>
+</head>
+<body>
+    <!-- navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class = "logo">
+            <img class = "myimg" src="{{url_for('static',filename='logo.jpg')}}" alt="">
+        </div>
+
+      <a class="navbar-brand" href="#">AI Health Care </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/help">Help</a>
+          </li>
+        
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+    <!-- AI Healthcare Introduction -->
+    <h1 style="text-align: center;">About AI Doctor</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="static\healthAI.jpg" alt="AI Healthcare" class="img-fluid ai-healthcare-img">
+            </div>
+        </div>
+    
+
+    <!-- Feature Section 1: Symptom Checker -->
+    <h2>Symptom Checker</h2>
+        <div class="row">
+            <div class="col-md-12 feature"> 
+                <p>
+                    The Symptom Checker feature is a powerful tool that helps you assess your health based on the symptoms you're experiencing. By simply describing your symptoms, our AI-powered system analyzes them meticulously to provide accurate insights and recommendations.
+                    Whether you're feeling unwell or just want to monitor your health, just write your symptoms. 
+                <br>
+                    With the Symptom Checker, you can gain valuable information about potential health concerns and take appropriate actions, whether it's seeking medical advice, adjusting your lifestyle, or simply keeping track of your well-being.
+                </p>
+            </div>
+        </div>
+    
+
+    <!-- Feature Section 2: Disease Prediction -->
+    <h2>Disease Prediction</h2>
+        <div class="row">
+            <div class="col-md-12 feature">
+                <p>
+                    Our AI-powered Disease Prediction feature utilizes advanced algorithms to predict potential diseases based on your symptoms. By leveraging vast medical data and machine learning techniques, we provide accurate disease predictions, empowering you to take proactive measures towards your health.<br>
+                    Whether you're experiencing minor symptoms or seeking to prevent future health issues, our Disease Prediction feature helps you stay informed about potential health risks and take necessary precautions.
+                </p>
+            </div>
+        </div>
+   
+
+    <!-- Feature Section 3: Precautions -->
+    <h2>Precautions</h2>
+        <div class="row">
+            <div class="col-md-12 feature">
+                
+                <p>
+                    Our Precautions feature offers personalized recommendations tailored to your specific health predictions. Based on our AI analysis of your symptoms and potential diseases, we provide actionable steps to help you prevent or manage health issues effectively.
+                <br>
+                    Whether it's lifestyle adjustments, dietary changes, or specific preventive measures, our Precautions feature ensures that you're equipped with the knowledge and strategies to safeguard your well-being.
+                </p>
+            </div>
+          </div>
+ 
+
+    <!-- Feature Section 4: Diet Plan -->
+    <h2>Diet Plan</h2>
+        <div class="row">
+            <div class="col-md-12 feature">
+                
+                <p>
+                    Our Diet Plan feature provides personalized dietary recommendations based on your predicted health condition. Whether you're managing a chronic condition or aiming for overall well-being, our AI analyzes your health data to suggest nutritious meals tailored to your needs.
+                <br>
+                    With our Diet Plan feature, you can ensure that your meals support your health goals, optimize your nutritional intake, and enhance your overall wellness.
+                </p>
+            </div>
+            
+        </div>
+    
+
+    <!-- Feature Section 5: Workout Routine -->
+    <h2>Workout Routine</h2>
+        <div class="row">
+            <div class="col-md-12 feature">
+                
+                <p>
+                    Our Workout Routine feature offers customized exercise plans tailored to your health condition and fitness goals. Whether you're recovering from an injury, managing a chronic condition, or simply aiming for better fitness, our AI designs workout routines suited to your needs.
+                <br>
+                    With our Workout Routine feature, you can optimize your physical activity, improve your strength and endurance, and enhance your overall well-being.
+                </p>
+            </div>
+            
+        </div>
+    
+
+    <!-- Feature Section 6: Medication Prescription -->
+    <h2>Medication Prescription</h2>
+        <div class="row">
+            <div class="col-md-12 feature">
+                <p>
+                    Our Medication Prescription feature generates comprehensive prescriptions based on your predicted disease or health condition. By analyzing your symptoms and medical history, our AI recommends the most suitable medications and dosage, ensuring effective treatment and management of your health issues.
+                <br>
+                    With our Medication Prescription feature, you can have confidence in your treatment journey, knowing that your medications are tailored to your specific needs and health status.
+                </p>
+            </div>
+            
+        </div>
+    
+    <div class="col-md-6">
+                <img src="static/footer.jpg" alt="Medication Prescription" class="img-fluid ai-healthcare-img">
+            </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
